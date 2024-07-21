@@ -12,10 +12,10 @@ grep "/works/13874982/chapters" navigate >> $directory/cuc-output.txt
 lines=$(wc -l < $directory/cuc-output.txt)
 
 # last chapter I have read
-last_chapter=21
+last_chapter=23
 
 # becaouse why not see every chapter grep found right
-cat $directory/cuc-output.txt
+# cat $directory/cuc-output.txt
 # ignore the weird symbols, this is just the colorful text output.
 echo -e "\e[1;32mAvailable chapters of: \e[1;31mGuardian Blue Season 3\e[1;31m"
 echo -e "\e[1;32mThe latest released chapter is \e[1;31m$lines\e[1;32m. The last chapter you have read is \e[1;31m$last_chapter\e[1;32m.\033[0m"
@@ -38,10 +38,10 @@ grep "https://www.fimfiction.net/story/360410" html >> $directory/cuc-output.txt
 lines=$(wc -l < $directory/cuc-output.txt)
 
 # last chapter I have read
-last_chapter2=26
+last_chapter2=27
 
 # becaouse why not see every chapter grep found right
-cat $directory/cuc-output.txt
+# cat $directory/cuc-output.txt
 # ignore the weird symbols, this is just the colorful text output.
 echo -e "\e[1;32mAvailable chapters of: \e[1;31mFoE PH Speak\e[1;31m"
 echo -e "\e[1;32mThe latest released chapter is \e[1;31m"$(($lines-1))"\e[1;32m. The last chapter you have read is \e[1;31m$last_chapter2\e[1;32m."
@@ -51,5 +51,5 @@ rm $directory/html
 rm $directory/cuc-output.txt
 
 # Any other book from Archive of Our Own and fimfiction will most likely work.
-# Sleep is so high becaouse otherwise the script will close the second it finishes.
+# Sleep is so high becaouse otherwise the script will close the second it finishes. I fucking suck at coding.
 sleep 120
